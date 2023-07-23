@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/product-detail.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="logo">
+            <i><i class='bx'></i></ion-icon></i>THOR STORE
+        </a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <ul class="icons">
+            <li>
+                <div class="search-box">
+                    <input type="text" name="search" class="search-text">
+                    <button class="search-btn"><ion-icon class="search" name="search"></ion-icon></button>
+                </div>
+            </li>
+            <li><a href="./cart.html"><ion-icon class="cart" name="cart"></ion-icon></a></li>
+        </ul>
+
+        <a href="./login.html" class="btnSI">Sign In</a>
+    </header>
+
+    <!-- breadcrumb -->
+    <div class="bread-crumb">
+        <div class="container">
+            <a href="../index.html" class="home">
+                Home
+                <ion-icon class="icon" name="chevron-forward"></ion-icon>
+            </a>
+
+            <a href="shop.html" class="product">
+                Men
+                <ion-icon class="icon" name="chevron-forward"></ion-icon>
+            </a>
+
+            <span class="name-product">
+                Lightweight Jacket
+            </span>
+        </div>
+    </div>
+
+    <section class="sec-product-detail">
+        <div class="container">
+            <div class="row">
+                <div class="img-box">
+                    <div class="img-product">
+                        <img src="../images/product/product-05.jpg" alt="">
+                    </div>
+                </div>
+                <div class="infor-box">
+                    <div class="infor-detail">
+                        <h4>
+                            Lightweight Jacket
+                        </h4>
+
+                        <h4>
+                            $58.79
+                        </h4>
+
+                        <p>
+                            Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare
+                            feugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptate esse
+                            obcaecati odio aperiam delectus, iure nemo voluptatem assumenda porro sequi qui velit
+                            commodi veritatis possimus, consequuntur nam expedita dolorum.
+                        </p>
+
+                        <div class="option-box">
+                            <div class="option">
+                                <div class="size">
+                                    <p>Size</p>
+                                </div>
+
+                                <div class="size-option">
+                                    <select class="form-select form-select-lg mb-3"
+                                        aria-label=".form-select-lg example">
+                                        <option>Choose an option</option>
+                                        <option>Size S</option>
+                                        <option>Size M</option>
+                                        <option>Size L</option>
+                                        <option>Size XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="size">
+                                    <p>Color</p>
+                                </div>
+
+                                <div class="size-option">
+                                    <select class="form-select form-select-lg mb-3"
+                                        aria-label=".form-select-lg example">
+                                        <option>Choose an option</option>
+                                        <option>Red</option>
+                                        <option>Blue</option>
+                                        <option>White</option>
+                                        <option>Grey</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="add-to-cart">
+                                <div class="buttons_added">
+                                    <input class="minus is-form" type="button" value="-" onclick="Click()">
+                                    <input aria-label="quantity" id="number" class="input-qty" max="1000" min="1"
+                                        name="" type="number" value=1 disabled>
+                                    <input class="plus is-form" type="button" value="+" onclick="handleClick()">
+                                </div>
+
+                                <div class="add">
+                                    <button type="submit">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- description -->
+            <div class="description">
+                <div class="des">
+                    <ul>
+                        <li class="des-list-1"><a href="#">Description</a></li>
+                        <li class="des-list-2"><a href="#">Additional information</a></li>
+                        <li class="des-list-3"><a href="#">Reviews(1)</a></li>
+                    </ul>
+                </div>
+                <div class="des-content">
+                    <div class="content">
+                        <div class="content-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum suscipit possimus quae non
+                            veritatis! Totam saepe illum molestiae, nemo quam architecto numquam voluptatem excepturi
+                            error facere eum. Illo, deserunt quo?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima ipsam optio cum iusto
+                            culpa reprehenderit dolore ipsa suscipit modi, dolores laudantium magnam sint consequatur
+                            error, inventore, commodi aliquid voluptatum?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero debitis rem autem soluta
+                            labore! Repellendus facilis odit, quibusdam dolores similique consequuntur temporibus
+                            officiis iusto. Quae commodi voluptate reiciendis at molestias.
+                        </div>
+                        <div class="content-2" >
+                            <table width="500px" height="200px">
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>0.79kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimensions</td>
+                                    <td>110 x 33 x 100 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Materials</td>
+                                    <td>60% cotton</td>
+                                </tr>
+                                <tr>
+                                    <td>Color</td>
+                                    <td>Black, Blue, Grey, Green, Red, White</td>
+                                </tr>
+                                <tr>
+                                    <td>Size</td>
+                                    <td>S,M, L, XL</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="content-3">
+                            Review Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque quas excepturi veritatis temporibus sequi minus rerum quos possimus exercitationem? Natus nisi blanditiis dolores error nobis incidunt laborum reiciendis. Sint.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- related product-->
+            <section class="relate-product">
+
+                <div class="title">
+                    <p>Related Products</p>
+                </div>
+
+                <div class="list-related-product">
+                    <div class="box">
+                        <div class="image">
+                            <a href="#"><img src="../images/product/product-01.jpg" alt=""></a>
+                            <a href="#" class="btnview">QUICK VIEW</a>
+                        </div>
+                        <a href="#" class="name-product">Esprit ruffle shirt</a>
+                        <p>$16.64</p>
+
+                    </div>
+                    <div class="box">
+                        <div class="image">
+                            <a href="#"><img src="../images/product/product-02.jpg" alt=""></a>
+                            <a href="#" class="btnview">QUICK VIEW</a>
+                        </div>
+                        <a href="#" class="name-product">Herschel supply</a>
+                        <p>$35.40</p>
+                    </div>
+                    <div class="box">
+                        <div class="image">
+                            <a href="#"><img src="../images/product/product-03.jpg" alt=""></a>
+                            <a href="#" class="btnview">QUICK VIEW</a>
+                        </div>
+                        <a href="#" class="name-product">Only Check Trouser</a>
+                        <p>$25.50</p>
+                    </div>
+                    <div class="box">
+                        <div class="image">
+                            <a href="#"><img src="../images/product/product-04.jpg" alt=""></a>
+                            <a href="#" class="btnview">QUICK VIEW</a>
+                        </div>
+                        <a href="#" class="name-product">Classic Trench Coat</a>
+                        <p>$75.50</p>
+                    </div>
+                    <div class="box">
+                        <div class="image">
+                            <a href="#"><img src="../images/product/product-05.jpg" alt=""></a>
+                            <a href="#" class="btnview">QUICK VIEW</a>
+                        </div>
+                        <a href="#" class="name-product">Classic Trench Coat</a>
+                        <p>$75.50</p>
+                    </div>
+                    <div class="box">
+                        <div class="image">
+                            <a href="#"><img src="../images/product/product-06.jpg" alt=""></a>
+                            <a href="#" class="btnview">QUICK VIEW</a>
+                        </div>
+                        <a href="#" class="name-product">Classic Trench Coat</a>
+                        <p>$75.50</p>
+                    </div>
+                    <div class="box">
+                        <div class="image">
+                            <a href="#"><img src="../images/product/product-07.jpg" alt=""></a>
+                            <a href="#" class="btnview">QUICK VIEW</a>
+                        </div>
+                        <a href="#" class="name-product">Classic Trench Coat</a>
+                        <p>$75.50</p>
+                    </div>
+                    <div class="box">
+                        <div class="image">
+                            <a href="#"><img src="../images/product/product-08.jpg" alt=""></a>
+                            <a href="#" class="btnview">QUICK VIEW</a>
+                        </div>
+                        <a href="#" class="name-product">Classic Trench Coat</a>
+                        <p>$75.50</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="load">
+                <a href="#" id="load">LOAD MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="footer-container">
+            <div class="footer category">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Watchs</a></li>
+                </ul>
+            </div>
+            <div class="footer blog">
+                <h3>Blog</h3>
+                <ul>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Phương thức thanh toán</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                </ul>
+            </div>
+            <div class="footer policy">
+                <h3>Policy</h3>
+                <ul>
+                    <li><a href="#">Giao hàng</a></li>
+                    <li><a href="#">Đổi trả</a></li>
+                    <li><a href="#">Bảo hành</a></li>
+                    <li><a href="#">Giải quyết khiếu nại</a></li>
+                </ul>
+            </div>
+            <div class="footer address">
+                <h3>Address & Contact</h3>
+                <ul>
+                    <li><a href="#">Tài khoản của tôi</a></li>
+                    <li><a href="#">Đơn đặt hàng</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Hotline: 0822 688 688</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/product-detail.js"></script>
+</body>
+
+</html>
